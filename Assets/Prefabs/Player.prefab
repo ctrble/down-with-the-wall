@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7294488353574139748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6440366524685270305}
+  - component: {fileID: 8321932397732708848}
+  - component: {fileID: 4947789826609348256}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6440366524685270305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294488353574139748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8321932397732708848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294488353574139748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3084f5a029a410a93eb03a1c8c84b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upKey: 119
+  upKeyAlt: 273
+  downKey: 115
+  downKeyAlt: 274
+  leftKey: 97
+  leftKeyAlt: 276
+  rightKey: 100
+  rightKeyAlt: 275
+  jump: 32
+--- !u!114 &4947789826609348256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7294488353574139748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e83bd1156a9e4af2892cb23cf90ce37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 8321932397732708848}
+  staticLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  grounded: 0
+  runSpeed: 0
+  accelerationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  accelerationPercent: 0
+  currentSpeed: 0
+  previousPosition: {x: 0, y: 0, z: 0}
+  currentPosition: {x: 0, y: 0, z: 0}
+  positionDelta: {x: 0, y: 0, z: 0}
+  jumpingTime: 0
+  jumpPosition: {x: 0, y: 0, z: 0}
+  speedJump: 0
+  gravity: 0
+  jumpingTime0: 0
+  jumpPosition0: {x: 0, y: 0, z: 0}
+  speed0: {x: 0, y: 0, z: 0}
+  isJumping: 0
